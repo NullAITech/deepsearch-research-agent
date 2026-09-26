@@ -1,0 +1,34 @@
+{
+  "name": "deepsearch-research-agent",
+  "version": "2.0.0",
+  "description": "Autonomous Multi-Source Research Agent, Grounded Citation Graph & Fact Corroborator — Desktop Workstation",
+  "main": "electron/main.cjs",
+  "bin": {
+    "deepsearch": "./bin/deepsearch.js",
+    "deepsearch-agent": "./bin/deepsearch.js"
+  },
+  "scripts": {
+    "start": "python3 -m deepsearch_research_agent.cli serve --port 8084",
+    "electron": "electron .",
+    "app": "electron .",
+    "test": "pytest tests/"
+  },
+  "keywords": [
+    "deepsearch",
+    "research-agent",
+    "citations",
+    "evidence-graph",
+    "fact-checking",
+    "web-crawler",
+    "contradiction-detector",
+    "zero-egress",
+    "sovereign",
+    "electron",
+    "zoth"
+  ],
+  "author": "NullAI Tech / Zoth Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.5.8"
+  }
+}
